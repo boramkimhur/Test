@@ -6,17 +6,20 @@ install text editor
     - vim or nano is installed within git and often make the user stuck in it. the recommanded one is VS code (visual studio code)
 basic commands
     - ls: show content (all files in the folder where you are)
-    - mkdir: create a directory/folder (make sure you are in the location where you want to create new one)
+    - mkdir: create a directory (make sure you are in the location where you want to create new one)
     - cd: change directory (to move to the folder where you want to work within)
     - cd ..: to move to the parent folder 
 git commands   
-    - git init            : to initiate git to watch the folder as a repository
-    - git remote add <name> <link> : to add a remote so that you can push or pull from/to it (git remote add origin https://...)
-    - git remote -v : see list of remotes
+    - git init                                      : to initiate git to watch the folder as a repository
+    - git remote add <name> <link>                  : to add a remote so that you can push or pull from/to it (git remote add origin https://...)
+    - git remote -v                                 : see list of remotes
     - git remote rename <name_of remote> <new name> : rename remote
 daily git commands:
-    - git add <file name> : to stage the untracked files
-    - git commit -m "message"   : to commit the staged files 
-    - git push <name of remote> <name of branch> : to push your branch to the remote branch (e.g. git push origin master)
-    - git fetch <name of remote> : it fetchs the entire remote. to update git with the latest status of your remote
-    - git pull <name of remote> <name of branch>: to update your branch with the remote branch (to pull the file in the remote to your local branch)
+    - git add <file name>                           : to stage the untracked files
+    - git commit -m "<message>"                     : to commit the staged files
+    - git commit --amend                            : add staged changes to previous commit
+    - git push <name of remote> <name of branch>    : to push your branch to the remote branch (e.g. git push origin master)
+    - git fetch <name of remote>                    : it fetchs the entire remote. to update git with the latest status of your remote
+    - git pull <name of remote> <name of branch>    : to update your branch with the remote branch (to pull the file in the remote to your local branch)
+    - git status                                    : see status of changes (staged / unstaged)
+    - git log                                       : see commit history
