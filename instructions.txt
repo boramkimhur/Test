@@ -11,6 +11,7 @@ basic commands
     - cd ..: to move to the parent folder 
 git commands   
     - git init                                      : to initiate git to watch the folder as a repository
+    - git clone <link>                              : make a copy of remote repository on local location
     - git remote add <name> <link>                  : to add a remote so that you can push or pull from/to it (git remote add origin https://...)
     - git remote -v                                 : see list of remotes
     - git remote rename <name_of remote> <new name> : rename remote
