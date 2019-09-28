@@ -16,7 +16,10 @@ git commands
     - git remote -v                                 : see list of remotes
     - git remote rename <name_of remote> <new name> : rename remote
 daily git commands:
-    - git add <file name>                           : to stage the untracked files
+    - git add <file name>                           : stage the untracked files
+    - git add -A                                    : stage all untracked files
+    - git reset                                     : unstage the staged files
+    - git reset --hard                              : unstage the staged files and reset changed file contents (undo changes)
     - git commit -m "<message>"                     : to commit the staged files
     - git commit --amend                            : add staged changes to previous commit
     - git push <name of remote> <name of branch>    : to push your branch to the remote branch (e.g. git push origin master)
@@ -24,3 +27,6 @@ daily git commands:
     - git pull <name of remote> <name of branch>    : to update your branch with the remote branch (to pull the file in the remote to your local branch)
     - git status                                    : see status of changes (staged / unstaged)
     - git log                                       : see commit history
+    - git branch                                    : show all branches
+    - git branch <branch_name>                      : create branch from current branch
+    - git checkout <branch_name>                    : switch to the branch
