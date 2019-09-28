@@ -9,6 +9,7 @@ basic commands
     - mkdir: create a directory (make sure you are in the location where you want to create new one)
     - cd: change directory (to move to the folder where you want to work within)
     - cd ..: to move to the parent folder 
+        - ../../folder/folder
 git commands   
     - git init                                      : to initiate git to watch the folder as a repository
     - git clone <link>                              : make a copy of remote repository on local location
@@ -16,6 +17,16 @@ git commands
     - git remote -v                                 : see list of remotes
     - git remote rename <name_of remote> <new name> : rename remote
 daily git commands:
+    WORK
+    - git status                                    : see status of changes (staged / unstaged)
+    - git log                                       : see commit history
+    - git branch                                    : show all branches
+    - git branch <branch_name>                      : create branch from current branch
+    - git checkout <branch_name>                    : switch to the branch
+    - git checkout -b <branch_name>                 : create branch from current branch and switch to the branch
+    - git stash                                     : holds the unstaged changes
+    - git stash pop                                 : returns the unstaged changes
+    SUBMIT TO REMOTE
     - git add <file name>                           : stage the untracked files
     - git add -A                                    : stage all untracked files
     - git reset                                     : unstage the staged files
@@ -23,10 +34,7 @@ daily git commands:
     - git commit -m "<message>"                     : to commit the staged files
     - git commit --amend                            : add staged changes to previous commit
     - git push <name of remote> <name of branch>    : to push your branch to the remote branch (e.g. git push origin master)
+    GET FROM REMOTE
     - git fetch <name of remote>                    : it fetchs the entire remote. to update git with the latest status of your remote
     - git pull <name of remote> <name of branch>    : to update your branch with the remote branch (to pull the file in the remote to your local branch)
-    - git status                                    : see status of changes (staged / unstaged)
-    - git log                                       : see commit history
-    - git branch                                    : show all branches
-    - git branch <branch_name>                      : create branch from current branch
-    - git checkout <branch_name>                    : switch to the branch
+    
